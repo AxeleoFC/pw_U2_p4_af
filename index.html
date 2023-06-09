@@ -12,7 +12,22 @@
     <header></header>
     <nav></nav>
     <section>
-        <div id="miApp"></div>
+        <h1>Inicio</h1>
+        <p>{{1+1}}</p>
+        <div id="miApp">
+            <!--Todo lo que este en este elemnto se pone en control de VUE-->
+            <!--En la seccion donde tengo la seccion de js, tengo que hacerlo atraves {{}}-->
+            <p>{{1+1}}</p>
+            <p>{{true}}</p>
+            <p>{{true?'Activo':Inactivo}}</p>
+
+            <h4>{{nombre}}</h4>
+            <h4>{{apellido}}</h4>
+            <h4>{{mensaje}}</h4>
+            <button v-on:click="cambiarNombre">Cambiar nombre</button>
+            <button v-on:click="cambiarApellido">Cambiar apellido</button>
+        </div>
+        <h1>Fin</h1>
     </section>
     <footer></footer>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
