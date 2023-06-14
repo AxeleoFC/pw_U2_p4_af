@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header></header>
+    <nav></nav>
+    <section class="estilo">
+        <h1>Datos de usuario</h1>
+        <div id="usuarioID" class="container">
+            <h2>Nombre</h2>
+            <input type="text" v-model="inputN">
+            <h2>Apellido</h2>
+            <input type="text" v-model="inputA">
+            <h2>Edad</h2>
+            <input type="number" v-model="inputE">
+            <h2>Ciudad</h2>
+            <input type="text" v-model="inputC">
+            <div>
+                <button @click="agregarUsuario()">Ingresar</button>
+            </div>
+            <ul>
+                <li v-for="item in listUsuario">
+                    <span>Nombre: {{ item.Nombre }}, Apellido: {{ item.Apellido }}, Edad: {{ item.Edad }}, Ciudad: {{ item.Ciudad }}</span>
+                  </li>
+            </ul>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="./js/usuario.js"></script>
+</body>
+</html>

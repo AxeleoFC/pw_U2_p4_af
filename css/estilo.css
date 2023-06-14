@@ -1,0 +1,44 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    text-align: center;
+    background-color: dimgray;
+    flex-direction: column;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.estilo {
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgrey;
+    padding: 20px;
+    border-radius: 35px;
+    box-shadow: 5px 10px 50px 5px gray;
+  }
+
+button{
+    border-radius: 15px;
+    background-color: aquamarine;
+    padding: 2px;
+    margin: 10px;
+}
+button:hover{
+    background-color: blue;
+    font-size: 15px;
+    color: white;
+}
