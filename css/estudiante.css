@@ -1,0 +1,67 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background: #958472;
+}
+.form{
+    background-color: #60AFDF;
+    width: 240px;
+    height: 450px;
+    border-radius: 10px;
+    padding: 1px 30px;
+    max-width: calc(1vd);
+    box-shadow: 0 0 40px -10px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    margin: 25px, 0px;
+    padding-bottom: 15px;
+    width: 240px;
+    color: #995A34;
+    border-bottom: 3px solid ;
+}
+
+p:before{
+    content: attr(type);
+    display: block;
+    margin: 7px 7px;
+    font-size: 16px;
+    color: #995A34;
+}
+
+input{
+    width: 100%;
+    border: 0;
+    border-bottom: 4px solid #194575;
+    background: none;
+}
+
+::placeholder{
+    color: #5A190B;
+}
+
+input:focus{
+    border: 0;
+    border-bottom: 4px solid chocolate;
+    outline: none;
+}
+
+button{
+    margin: 2px 87px;
+    background-color: #5A190B;
+    color: #958472;
+    border-radius: 7px;
+}
+
+button:hover{
+    background-color: #BD9F51;
+    color: #5A190B;
+}
+
+.formEstudiante{
+
+}
