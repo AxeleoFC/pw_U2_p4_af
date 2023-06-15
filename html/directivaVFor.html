@@ -17,9 +17,7 @@
             <input type="text" v-model="nombre" v-on:keypress.enter="agregarEstudiante2">
             <h1>{{nombre}}</h1>
             <hr>
-            <input type="text" v-model="apellido">
-            <h1>{{apellido}}</h1>
-            <hr>
+
             <h3>Lista Estudiantes</h3>
             <!--<ul>
                 <li>{{miarreglo[0]}}</li>
@@ -35,8 +33,8 @@
             </ul>-->
             <ul>
                 <li v-for="({nomb, apell}, index) in miarreglo">
-                    <span>{{index+1}}-{{nomb}}</span>
-                    <blockquote>{{apell}}</blockquote>
+                    <span v-show="nomb!==undefined">{{index+1}}-{{nomb}}</span>
+                    <blockquote v-if="apell!==undefined">Apellido: {{apell}}</blockquote>
                 </li>
             </ul>
         </div>

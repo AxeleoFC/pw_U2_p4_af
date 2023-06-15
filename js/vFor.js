@@ -14,8 +14,7 @@ const app = Vue.createApp({
     data(){
         return{
             miarreglo:estudiantes(),
-            nombre:'Axel',
-            apellido:'Flores'
+            nombre:'Axel'
         }
     },
     methods:{
@@ -26,8 +25,7 @@ const app = Vue.createApp({
             if (event.charCode=='13') {
                 console.log('Es enter')
                 const nEstudiante={
-                    nomb: this.nombre,
-                    apell: this.apellido
+                    nomb: this.nombre
                 }
                 this.miarreglo.unshift(nEstudiante)
             }else{
